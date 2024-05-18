@@ -1,0 +1,42 @@
+::selection {
+  background-color: #0dcaf0;
+}
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+  position: relative;
+  display: inline-block;
+}
+h1::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  left: 0;
+  top: 65%;
+  bottom: 0%;
+  background-color: #0dcaf0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+h1:hover:after {
+  top: 35%;
+  bottom: 0%;
+}
+h2,
+h5 {
+  font-family: "Righteous", sans-serif;
+}
+h2 {
+  background-image: linear-gradient(#1fbea2, #0d94f0);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h2::selection {
+  background-color: #0dcaf050;
+}
+.modal-backdrop.show {
+  opacity: 0;
+}
+.modal-backdrop {
+  --bs-backdrop-zindex: -2;
+}
