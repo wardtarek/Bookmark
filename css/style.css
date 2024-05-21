@@ -34,9 +34,9 @@ h2 {
 h2::selection {
   background-color: #0dcaf050;
 }
-.modal-backdrop.show {
+/* .modal-backdrop.show {
   opacity: 0;
 }
 .modal-backdrop {
   --bs-backdrop-zindex: -2;
-}
+} */

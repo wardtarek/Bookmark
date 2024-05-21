@@ -30,6 +30,7 @@
           class="form-control"
           id="siteInput"
           placeholder="Bookmark Name"
+          onkeyup="validationName()"
         />
       </div>
       <div class="mb-4">
@@ -41,6 +42,7 @@
           class="form-control"
           id="urlInput"
           placeholder="Website URL"
+          onkeyup="validationSite()"
         />
       </div>
       <div class="d-flex justify-content-center">
@@ -73,7 +75,7 @@
         </tbody>
       </table>
     </div>
-    <div id="item" style="display: none;">
+    <div id="item" >
       <div
         class="modal fade"
         id="exampleModal"
